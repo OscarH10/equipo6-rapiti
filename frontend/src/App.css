@@ -1,0 +1,66 @@
+/* Contenedor del Buscador */
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.search-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Foco accesible para el input */
+.search-box input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.2);
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.results-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+/* Accesibilidad: Al pasar con TAB por la lista */
+.results-list li:focus {
+  background: #f0f0ff;
+  outline: 2px solid #646cff;
+  border-radius: 4px;
+}
+
+/* Clase para ocultar etiquetas visualmente pero mantenerlas para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Nuestra regla de accesibilidad para la tecla TAB */
+@theme {
+  --color-accent: #3b82f6;
+}
+
+@layer base {
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+    outline-offset: 2px;
+  }
+}
